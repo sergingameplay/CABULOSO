@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../font/OpenSans.ttf');
+}
+
+body{
+    font-family: 'OpenSans';
+    background-color: #045083;
+    color: white;
+}
+
+h1{
+    text-align: center;
+}
+
+div{
+    margin: auto;
+    width: max-content;
+}
+
+button{
+    cursor: pointer;
+    width: 120px;
+    height: 30px;
+    font-family: 'OpenSans';
+    background-color: #4a494e;
+    color: #ffffff;
+    border-radius: 5px;
+    transition: 0.6s;
+}
+
+button:hover{
+    background-color: #707070;
+    transition: 0.6s;
+}
+
+img{
+    margin: auto;
+}
