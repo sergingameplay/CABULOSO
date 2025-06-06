@@ -15,11 +15,31 @@ let fome = 100;
 let diversao = 100;
 let energia = 100;
 
-function addHistorico(text){
+function addHistorico(texto, tipo){
     const li = document.createElement('li');
-    li.textContent = text;
+    const horario = new Date().toLocaleTimeString();
+    li.textContent = `${horario} - ${texto}`;
     historicoLista.appendChild(li);
+ 
+    if (historicoLista.children.length > 10){
+        historicoLista.removeChild(historicoLista.firstChild);
+    }
+
+    if (tipo == 'triste'){
+        li.classList.add('triste');
+    }
 }
+
+let tempoinativo = 0;
+
+setInterval(function() {
+tempoinativo += 1;
+ 
+if(tempoinativo >= 10){
+    pontos -= 1;
+    if (pontos < 0) pontos = 0;
+}
+}, 1000);
 
 // Atualizar status na tela
 function atualizarStatus() {
