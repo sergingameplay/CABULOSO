@@ -7,9 +7,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="manifest" href="./json/manifest.json">
-        <script src="./js/main.js"></script>
+        <script src="./js/main.js" defer></script>
         <link rel="stylesheet" href="./css/estilo.css">
     </head>
+    
     <body id="bg">
         <h1>Tamagochi</h1>
         <div id="pet">😁</div>
@@ -18,14 +19,21 @@
         <button id="brincarBtn">Brincar ⚽️</button>
         <button id="dormirBtn">Dormir 💤</button>
     </div>
+
     <div>
         <p>Pontos: <span id="pontos">0</span></p>
     </div>
+
+    <div id="status">
+        <p>Fome: <span id="fome">100</span></p>
+        <p>Diversão: <span id="diversao">100</span></p>
+        <p>Energia: <span id="energia">100</span></p>
+      </div>
+
     <div>
         <h3>Historico de ações:</h3>
         <ul id="historico"></ul>
     </div>
+    
 
-    <img src="img/3f857f8a9d706b7a54cbdd1056e5c4cc.gif">
-    </body>
 </html>
